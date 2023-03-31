@@ -1,0 +1,404 @@
+.raleway {
+    font-family: 'Raleway';
+}
+
+.bg-image {
+    background-image: url('../img/bg-header.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.a-style {
+    color: #051101;
+    text-decoration: none;
+    margin-right: 25px;
+    opacity: 0.6;
+    font-size: small;
+}
+
+.a-style:hover {
+    color: #051101;
+    opacity: 10;
+}
+
+@media (max-width: 700px) {
+    .burger {
+        margin-top: -5px;
+    }
+
+    .ul-list {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 5%;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .a-style {
+        margin-bottom: 10px;
+    }
+
+    .menu-btn {
+        width: 30px;
+        height: 30px;
+        position: relative;
+        z-index: 3;
+        overflow: hidden;
+    }
+
+    .menu-btn span {
+        width: 30px;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 0%;
+        transform: translate(-50%, -50%);
+        background-color: #222222;
+        transition: all 0.5s;
+    }
+
+    .menu-btn span:nth-of-type(2) {
+        top: calc(50% - 5px);
+    }
+
+    .menu-btn span:nth-of-type(3) {
+        top: calc(50% + 5px);
+    }
+
+    .menu-btn.active span:nth-of-type(1) {
+        display: none;
+    }
+
+    .menu-btn.active span:nth-of-type(2) {
+        top: 50%;
+        margin-left: 10px;
+        transform: translate(-50%, 0%) rotate(40deg);
+    }
+
+    .menu-btn.active span:nth-of-type(3) {
+        top: 50%;
+        margin-left: 10px;
+        transform: translate(-50%, 0%) rotate(-40deg);
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 90px;
+        height: 120px;
+        padding: 0px;
+        background-color: white;
+        transform: translateX(100%);
+        transition: transform 0.5s;
+    }
+
+    .menu.active {
+        transform: translateX(0);
+    }
+
+    .menu li {
+        list-style-type: none;
+    }
+}
+
+.green-text {
+    color: #5CBE3A;
+}
+
+.last-price {
+    opacity: 0.69;
+    text-decoration: line-through;
+    color: #5CBE3A;
+    font-size: 2rem;
+}
+
+.current-price {
+    color: #5CBE3A;
+}
+
+.next-slider,
+.next-slider-2,
+.next-slider-3 {
+    position: absolute;
+    top: 35%;
+    right: 0%;
+    width: 50px;
+    height: 30px;
+    border-radius: 200px;
+    background-color: white;
+    background-repeat: no-repeat;
+    border: #5CBE3A 2px solid;
+    cursor: pointer;
+    outline: none;
+}
+
+.arrow-color {
+    color: #5CBE3A;
+}
+
+.arrow-color:hover {
+    color: white;
+}
+
+.next-slider:hover,
+.next-slider-2:hover,
+.next-slider-3:hover {
+    background-color: #5CBE3A;
+    border: white 2px solid;
+    transition: ease-in 0.5s;
+    transform: scale(1.2);
+}
+
+.prev-slider,
+.prev-slider-2,
+.prev-slider-3 {
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    width: 50px;
+    height: 30px;
+    border-radius: 200px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: #5CBE3A 2px solid;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+}
+
+.prev-slider:hover,
+.prev-slider-2:hover,
+.prev-slider-3:hover {
+    background-color: #5CBE3A;
+    border: white 2px solid;
+    transition: ease-in 0.5s;
+    transform: scale(1.2);
+}
+
+.father-carousel {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.founder-6 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.child-carousel-1 {
+    width: 363px;
+    height: 363px;
+    overflow: hidden;
+}
+
+.slider6,
+.slider6-2,
+.slider6-3 {
+    position: relative;
+    transition: 1s;
+    display: flex;
+    flex-direction: row;
+}
+
+.img6 {
+    width: 363px;
+    height: 363px;
+}
+
+.white-button {
+    background-color: inherit;
+    border-radius: 5px;
+    border: 1px solid #5CBE3A;
+    font-size: small;
+    padding: 9px 19px;
+    color: #5CBE3A;
+}
+
+.white-button:hover {
+    background-color: #5CBE3A;
+    border-radius: 5px;
+    border: none;
+    font-size: small;
+    padding: 10px 20px;
+    color: white;
+}
+
+.customer-review {
+    color: #5CBE3A;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.animation:hover {
+    transition: 1s ease;
+    transform: scale(1.2);
+}
+
+.h-610 {
+    height: 610px;
+}
+
+.section3_style {
+    padding: 10rem 6rem;
+}
+
+.w-sm-100 {
+    width: 40%;
+}
+
+.sneaker {
+    padding-left: 2rem;
+    width: 60%;
+    float: right;
+}
+
+.slider-sneaker {
+    width: 5%;
+    float: right;
+}
+
+.sneaker1 {
+    width: 100%;
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .section3_style {
+        padding: 10rem 1rem;
+    }
+
+    .sneaker {
+        display: none;
+    }
+
+    .sneaker1 {
+        display: block;
+    }
+}
+
+@media (max-width: 900px) {
+    .section3 {
+        flex-wrap: wrap;
+    }
+
+    .w-sm-100 {
+        width: 100%;
+    }
+}
+
+.size-img-section4 {
+    width: 50%;
+    float: left;
+}
+
+.mb-6 {
+    margin-bottom: 6rem;
+}
+
+@media (max-width: 700px) {
+    .video-nike {
+        width: 100%;
+    }
+
+    .size-img-section4 {
+        width: 90%;
+        padding-bottom: 20px;
+        float: none;
+    }
+}
+
+.my-mt-5 {
+    margin-top: 5rem;
+}
+
+.w-2021 {
+    margin-left: -15%;
+    width: 10%;
+}
+
+.slider {
+    box-shadow: -8px 10px 30px rgba(0, 0, 0, 0.2);
+    ;
+    width: 500px;
+    height: 256px;
+    /* margin: 20px auto; */
+    overflow: hidden;
+}
+
+.slider-line {
+    height: 256px;
+    width: 1500px;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+}
+
+.wh-10 {
+    width: 10%;
+    height: 10%;
+}
+
+.width {
+    width: 500px;
+}
+
+.comment-page {
+    width: 2rem;
+    height: 2rem;
+    fill: #5CBE3A;
+}
+
+.comment-button-page {
+    border: none;
+    background-color: white;
+}
+
+.nike-official-color {
+    fill: #5CBE3A;
+}
+
+.color-grey {
+    fill: #d5d5d5;
+}
+
+.button-slider {
+    padding-left: 5%;
+    padding-top: 5%;
+    margin-right: 3rem;
+    width: 26%;
+}
+
+@media (max-width: 1000px) {
+    .slider {
+        margin: 20px 0px;
+    }
+
+    .button-slider {
+        padding-left: 0;
+    }
+
+    .comment-page {
+        width: 20px;
+        margin: 0;
+    }
+}
+
+.footer-line {
+    width: 100%;
+    height: 100%;
+}
+
+.social-network {
+    width: 2rem;
+    margin-right: 10px;
+}
+
+@media (max-width: 500px) {
+    .width-comment {
+        width: 100%;
+    }
+}
