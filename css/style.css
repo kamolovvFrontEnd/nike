@@ -1,3 +1,9 @@
+@media (max-width: 520px) {
+    body {
+        width: 500px
+    }
+}
+
 .raleway {
     font-family: 'Raleway';
 }
@@ -321,7 +327,6 @@
 
 .slider {
     box-shadow: -8px 10px 30px rgba(0, 0, 0, 0.2);
-    ;
     width: 500px;
     height: 256px;
     /* margin: 20px auto; */
@@ -335,6 +340,10 @@
     position: relative;
     left: 0;
     transition: all ease 1s;
+}
+
+.button-of-slider-width {
+    width: 7rem;
 }
 
 .wh-10 {
